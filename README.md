@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# SulitinMoGroceryMo
+
+The SulitinMoGroceryMo application is a website for searching recipes. It aims to eliminate food waste by using every bit of your produce in your fridge. Users can use SulitinMoGroceryMo to find recipes with the ingredients they already have.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
