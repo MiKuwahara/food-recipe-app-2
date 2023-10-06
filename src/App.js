@@ -1,10 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import './App.css';
+
 import RecipeCard from "./RecipeCard";
+import SearchIcon from "./search.svg";
 //import RecipeCard from "./RecipeCard";
 
-const API_URL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=179a3c5a0f5c45168583ae15f7b46bf4";
+const API_URL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=" + process.env.REACT_APP_API_KEY;
 
 const App = () => {
     const [recipes, setRecipes] = useState([]);
@@ -27,7 +29,7 @@ const App = () => {
 
     return (
         <div className="app">
-        <h1>SulitinMoGroceryMo</h1>
+        <h1>Sulitin.Mo.Grocery.Mo.</h1>
 
         <div className="search">
             <input 
@@ -35,10 +37,17 @@ const App = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
             />
+            <img 
+                src={SearchIcon}
+                alt="search"
+                onClick={() => searchRecipes(searchTerm)}
+            />
+            {/*}
             <button
                 onClick={() => searchRecipes(searchTerm)}
                 >Search
             </button>
+            */}
         </div>
 
         {/*sometimes the code wont work if formatting is not correct. weird!!*/}

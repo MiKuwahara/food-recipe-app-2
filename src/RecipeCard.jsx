@@ -11,7 +11,9 @@ const RecipeCard = ({recipe: { title, image, imageType } }) => {
             <div>
                 <h3>{title}</h3>
                 <span>{imageType}</span>
-                <button>{title}</button>
+                <div>
+                    <button>{title}</button>    
+                </div>
             </div>
         
         </div>
