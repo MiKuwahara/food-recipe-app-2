@@ -3,6 +3,8 @@
 
 The SulitinMoGroceryMo application is a website for searching recipes. It aims to eliminate food waste by using every bit of your produce in your fridge. Users can use SulitinMoGroceryMo to find recipes with the ingredients they already have.
 
+Fun Fact: SulitinMoGroceryMo is a Filipino phrase that basically means "make the most of your grocery".
+
 ## Setup / Installation
 
 ### Prerequisites
@@ -48,6 +50,9 @@ This will start the development server and run the React project on your web bro
 * React.JS
 
 
+## Screenshot of this project
 
+Home page
+![Home page](./Home.png)
 
 
