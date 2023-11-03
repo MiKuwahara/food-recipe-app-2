@@ -46,8 +46,13 @@ $ npm start
 This will start the development server and run the React project on your web browswer. Navigate to http://localhost:3000 to see the project.
 
 
-## Built with
-* React.JS
+## Technologies used
+* ReactJS
+* JavaScript
+* HTML/CSS
+* Spoonacular API
+* Visual Studio Code
+* Github
 
 
 ## Screenshot of this project
