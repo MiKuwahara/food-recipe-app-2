@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { MdMenuBook, MdAccessTime, MdOutlinePerson } from "react-icons/md";
 
 
 //const API_URL2 = "https://api.spoonacular.com/recipes/{id}/card?apiKey=" + process.env.REACT_APP_API_KEY;
 const API_URL2 = "https://api.spoonacular.com/recipes";
 
-const RecipeCard = ({ recipe: { id, title, image, imageType, summary, sourceUrl, spoonacularSourceUrl, readyInMinutes, servings } }) => {
+const RecipeCard = ({ recipe: { id, title, image, imageType, summary, sourceUrl, spoonacularSourceUrl, readyInMinutes, servings,  } }) => {
 
     const [recipe, setRecipe] = useState();
 
@@ -25,14 +26,44 @@ const RecipeCard = ({ recipe: { id, title, image, imageType, summary, sourceUrl,
 
     return (
         <div className="card">
-
+<img src={image ? image : "https://via.placeholder.com/400"} alt={title} className="card_image" />
             <div className="card_body">
-                <img src={image ? image : "https://via.placeholder.com/400"} alt={title} className="card_image" />
+                
 
                 <h2 className="card_title">{title ? title : "Hawaiian Pizza"}</h2>
+             
+                <div className="card_details">
+                    <div className="time">
+                        <div className="time_row1">
+                            <MdAccessTime className="icon" />
+                            <p className="row1">{readyInMinutes}</p>
+                        </div>
+                        <div className="time_row2">
+                            <p className="row2">Minutes</p>
+                        </div>
+                    </div>
+                   {/**
+                    *  <div className="ingredient_count">
+                        <div className="ingredient_count_row1">
+                            <MdMenuBook className="icon" />
+                            <p className="row1">5</p>
+                        </div>
+                        <div className="ingredient_count_row2">
+                            <p className="row2">Ingredients</p>
+                        </div>
+                    </div>
+                    */}
+                    <div className="serving">
+                        <div className="serving_row1">
+                            <MdOutlinePerson className="icon" />
+                            <p className="row1">{servings}</p>
+                        </div>
+                        <div className="serving_row2">
+                            <p className="row2">Serving</p>
+                        </div>
+                    </div>
+                </div>
 
-                <div className="card_details"></div>
-                
                 <p className="card_description">{summary}</p>
 
 

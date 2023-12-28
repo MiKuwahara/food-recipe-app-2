@@ -165,6 +165,9 @@ input::placeholder{
   background-color: #ffffff;
 }
 
+.card_body {
+  margin: 5px;
+}
 
 
 .card_image {
@@ -174,7 +177,9 @@ input::placeholder{
 }
 
 .card_title {
-  padding: 1rem;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .card_description {
@@ -338,4 +343,39 @@ Recipe Template
   padding-bottom: 0.75rem;
   color: var(--primary-500);
   text-transform: capitalize;
+}
+
+/*****************************************/
+
+.card_details{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 20px 0  ;
+}
+
+.time,
+.ingredient_count,
+.serving {
+  font-size: 18px;
+}
+
+.time_row1,
+.ingredient_count_row1,
+.serving_row1 {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.card_details .row1 {
+  color: green;
+  font-weight:600
+}
+
+.card_details .row2 {
+  font-size: 12px;
+  font-weight: 500;
 }
