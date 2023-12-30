@@ -79,6 +79,16 @@ input::placeholder{
   /* Set this based on the size of the text box you are using */
 }
 
+.logo-brand-name {
+  display: flex;
+}
+
+.logo-icon {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  margin-right: 10px;
+}
 .search {
 
  
@@ -129,7 +139,7 @@ input::placeholder{
   position: absolute;
   top: 6%;
   transform: translateY(-50%);
-  right: 200px;
+  right: 190px;
   color: #fff;
   width: 25px;
   cursor: pointer;

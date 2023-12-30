@@ -1,27 +1,32 @@
-import {useState} from "react";
+import { useState } from "react";
 import SearchIcon from "../search.svg";
-import {Link} from "react-router-dom";
-import {SlMagnifier} from "react-icons/sl";
+import { Link } from "react-router-dom";
+import { SlMagnifier } from "react-icons/sl";
+import { PiBowlFoodLight } from "react-icons/pi";
+import { SiIfood } from "react-icons/si";
 
-function Header({searchRecipes, setSearchTerm, searchTerm}) {
-    
+function Header({ searchRecipes, setSearchTerm, searchTerm }) {
+
     //const [searchTerm, setSearchTerm] = useState("");
 
     return (
         <header className='header'>
+            <div className="logo-brand-name">
+                <PiBowlFoodLight className="logo-icon" />
                 <h1>Sulitin.Mo.Grocery.Mo.</h1>
-      
-                <input className="search"
-                    placeholder="Search for recipes"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                />
-                <img 
+            </div>
+
+            <input className="search"
+                placeholder="Search for recipes"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <img
                 src={SearchIcon}
                 alt="search"
                 onClick={() => searchRecipes(searchTerm)}
             />
-              
+
 
 
         </header>
