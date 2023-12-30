@@ -60,33 +60,17 @@ const rep = [
 const API_URL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=" + process.env.REACT_APP_API_KEY + "&addRecipeInformation=true";
 const API_URL2 = "https://api.spoonacular.com/recipes/findByIngredients?apiKey=" + process.env.REACT_APP_API_KEY +"&addRecipeInformation=true";
 
-const Home = () => {
-    const [recipes, setRecipes] = useState([]);
-    const [searchTerm, setSearchTerm] = useState("");
-
-    console.log(typeof rep);
-
-    const searchRecipes = async (title) => {
-        const response = await fetch(`${API_URL}&query=${title}`);
-        const data = await response.json();
-
-        console.log(data.results);
-        setRecipes(data.results);
-
-    };
-
-
-    useEffect(() => {
-        searchRecipes("Pizza");
-    }, []);
-
+const Home = (recipes) => {
+    
+    console.log("recipes");
+    console.log(recipes.recipes);
 
     return (
             <div className="wrapper">
                 {/*sometimes the code wont work if formatting is not correct. weird!!*/}
-                {recipes?.length > 0 ? (
+                {recipes.recipes?.length > 0 ? (
                     <>
-                        {recipes.map((r) => (
+                        {recipes.recipes.map((r) => (
                             <RecipeCard recipe={r} />
                         ))}
                     </>

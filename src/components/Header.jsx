@@ -1,10 +1,11 @@
 import {useState} from "react";
 import SearchIcon from "../search.svg";
 import {Link} from "react-router-dom";
+import {SlMagnifier} from "react-icons/sl";
 
-function Header({searchRecipes}) {
+function Header({searchRecipes, setSearchTerm, searchTerm}) {
     
-    const [searchTerm, setSearchTerm] = useState("");
+    //const [searchTerm, setSearchTerm] = useState("");
 
     return (
         <header className='header'>
@@ -15,6 +16,11 @@ function Header({searchRecipes}) {
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
+                <img 
+                src={SearchIcon}
+                alt="search"
+                onClick={() => searchRecipes(searchTerm)}
+            />
               
 
 
