@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SearchIcon from "../search.svg";
 import { Link } from "react-router-dom";
-import { SlMagnifier } from "react-icons/sl";
+import { FaSearch } from "react-icons/fa";
 import { PiBowlFoodLight } from "react-icons/pi";
 import { SiIfood } from "react-icons/si";
 
@@ -21,8 +21,8 @@ function Header({ searchRecipes, setSearchTerm, searchTerm }) {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <img
-                src={SearchIcon}
+            <FaSearch
+                className="search-img"
                 alt="search"
                 onClick={() => searchRecipes(searchTerm)}
             />

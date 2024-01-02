@@ -56,6 +56,6 @@ This will start the development server and run the React project on your web bro
 ## Screenshot of This Project
 
 Home page
-![Home page](./Home.png)
+![Home page](./Home2.png)
 
 
