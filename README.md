@@ -5,6 +5,9 @@ The SulitinMoGroceryMo application is a website for searching recipes. It aims t
 
 ___Fun Fact___ SulitinMoGroceryMo is a Filipino phrase that basically means "make the most of your grocery".
 
+Home page
+![Home page](./Home2.png)
+
 ## Setup and Installation
 
 ### Prerequisites
@@ -52,10 +55,5 @@ This will start the development server and run the React project on your web bro
 * Visual Studio Code
 * Github
 
-
-## Screenshot of This Project
-
-Home page
-![Home page](./Home2.png)
 
 
