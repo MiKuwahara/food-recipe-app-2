@@ -39,6 +39,7 @@ const App = () => {
                     <div className="head">
                         <Header searchRecipes={searchRecipes} setSearchTerm={setSearchTerm} searchTerm={searchTerm}  />
                     </div>
+                    
                     <Routes>
                         <Route path='/' element={<Home recipes={recipes}/>} />
                         <Route path='/details' element={<RecipeDetails />} />

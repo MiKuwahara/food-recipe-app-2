@@ -16,16 +16,18 @@ function Header({ searchRecipes, setSearchTerm, searchTerm }) {
                 <h1>Sulitin.Mo.Grocery.Mo.</h1>
             </div>
 
-            <input className="search"
-                placeholder="Search for recipes"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            <FaSearch
-                className="search-img"
-                alt="search"
-                onClick={() => searchRecipes(searchTerm)}
-            />
+            <div className="input-with-icon-container">
+                <input className="search"
+                    placeholder="Search for recipes"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                />
+                <FaSearch
+                    className="search-img"
+                    alt="search"
+                    onClick={() => searchRecipes(searchTerm)}
+                />
+            </div>
 
 
 
