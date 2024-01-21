@@ -17,7 +17,8 @@ const App = () => {
     console.log(typeof rep);
 
     const searchRecipes = async (title) => {
-        const response = await fetch(`${API_URL}&query=${title}`);
+        //const response = await fetch(`${API_URL}&query=${title}`);
+        const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&addRecipeInformation=true&query=${title}`);
         const data = await response.json();
 
         console.log(data.results);
