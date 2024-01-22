@@ -242,7 +242,7 @@ Page
 ===============
 */
 
-.page {
+/* .page {
 	background-color: white;
 	width: 90vw;
 	max-width: var(--max-width);
@@ -253,7 +253,7 @@ Page
 .page {
 	padding-top: 2rem;
 	min-height: calc(100vh - (6rem + 4rem));
-}
+} */
 
 /*
 =============== 
@@ -261,7 +261,7 @@ Recipe Template
 ===============
 */
 
-.recipe-hero {
+/* .recipe-hero {
 	display: grid;
 	gap: 3rem;
 }
@@ -378,6 +378,6 @@ Recipe Template
 	padding-bottom: 0.75rem;
 	color: var(--primary-500);
 	text-transform: capitalize;
-}
+} */
 
 /*****************************************/

@@ -44,7 +44,7 @@ This command will install all the dependencies listed in the package.json.
 $ npm start
 ```
 
-This will start the development server and run the React project on your web browswer. Navigate to http://localhost:3000 to see the project.
+This will start the development server and run the React project on your web browser. Navigate to http://localhost:3000 to see the project.
 
 
 ## Technologies Used

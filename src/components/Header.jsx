@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SearchIcon from "../search.svg";
+import SearchIcon from "../assets/search.svg";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { PiBowlFoodLight } from "react-icons/pi";

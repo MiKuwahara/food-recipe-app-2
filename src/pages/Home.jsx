@@ -1,9 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import RecipeCard from "../RecipeCard";
-import SearchIcon from "../search.svg";
+import RecipeCard from "../components/RecipeCard";
 //import RecipeCard from "./RecipeCard";
 const rep = [
     {

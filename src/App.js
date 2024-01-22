@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import RecipeDetails from "./RecipeDetails";
-
 
 const API_URL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=" + process.env.REACT_APP_API_KEY + "&addRecipeInformation=true";
 
@@ -43,7 +41,6 @@ const App = () => {
                     
                     <Routes>
                         <Route path='/' element={<Home recipes={recipes}/>} />
-                        <Route path='/details' element={<RecipeDetails />} />
                     </Routes>
                 </div>
             </Router>
