@@ -6,7 +6,7 @@ The SulitinMoGroceryMo application is a website for searching recipes. It aims t
 ___Fun Fact___ SulitinMoGroceryMo is a Filipino phrase that basically means "make the most of your grocery".
 
 Home page
-![Home page](./Home2.png)
+![Home page](./src/assets/Home2.png)
 
 ## Setup and Installation
 
